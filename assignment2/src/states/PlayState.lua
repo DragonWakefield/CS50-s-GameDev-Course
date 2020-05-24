@@ -35,6 +35,7 @@ function PlayState:enter(params)
     self.powerups = {}
 
     self.recoverPoints = 5000
+    self.sCounter = 0
 
     -- give ball random starting velocity
     self.balls[1].dx = math.random(-200, 200)
@@ -42,6 +43,9 @@ function PlayState:enter(params)
 end
 
 function PlayState:update(dt)
+
+
+
     if self.paused then
         if love.keyboard.wasPressed('space') then
             self.paused = false
@@ -119,17 +123,22 @@ function PlayState:update(dt)
                         -- add to score
                     
                         self.score = self.score + (brick.tier * 200 + brick.color * 25)
+                        self.sCounter = (brick.tier * 200 + brick.color * 25)
                     end
   
-
+                    if self.sCounter > self.recoverPoints then
+                        
+                        if self.paddle.size < 4 then
+                            self.paddle.size = self.paddle.size + 1
+                        end 
+                        self.sCounter = 0
+                    end
 
 
                     -- if we have enough points, recover a point of health
                     if self.score > self.recoverPoints then
 
-                        if self.paddle.size < 4 then
-                            self.paddle.size = self.paddle.size + 1
-                        end 
+        
                         -- can't go above 3 health
                         self.health = math.min(3, self.health + 1)
 
