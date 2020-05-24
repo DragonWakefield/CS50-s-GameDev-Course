@@ -126,7 +126,7 @@ function PlayState:update(dt)
                         self.sCounter = self.sCounter + (brick.tier * 200 + brick.color * 25)
                     end
   
-                    if self.sCounter > self.recoverPoints then
+                    if self.sCounter > 8000 then
                         
                         if self.paddle.size < 4 then
                             self.paddle.size = self.paddle.size + 1

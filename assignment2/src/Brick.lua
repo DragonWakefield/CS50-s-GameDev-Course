@@ -145,10 +145,6 @@ end
 
 function Brick:update(dt)
     self.psystem:update(dt)
-
-end
-
-function Brick:render()
     if self.color == 6 then
         
         if self.tier >= 1 then
@@ -156,6 +152,11 @@ function Brick:render()
             self.locked = true
         end
     end 
+
+end
+
+function Brick:render()
+
     if self.inPlay then
         love.graphics.draw(gTextures['main'], 
             -- multiply color by 4 (-1) to get our color offset, then add tier to that
