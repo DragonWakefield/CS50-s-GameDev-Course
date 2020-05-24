@@ -123,7 +123,7 @@ function PlayState:update(dt)
                         -- add to score
                     
                         self.score = self.score + (brick.tier * 200 + brick.color * 25)
-                        self.sCounter = (brick.tier * 200 + brick.color * 25)
+                        self.sCounter = self.sCounter + (brick.tier * 200 + brick.color * 25)
                     end
   
                     if self.sCounter > self.recoverPoints then
