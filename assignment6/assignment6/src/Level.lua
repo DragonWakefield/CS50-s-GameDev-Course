@@ -217,9 +217,9 @@ function Level:update(dt)
             end 
             
         end 
-        if #self.aliens == 0 and reload == 3 then
+        if #self.aliens == 0 and reload == #self.launchMarker.alien then
             gStateMachine:change('start')
-        elseif reload == 3 then
+        elseif reload == #self.launchMarker.alien then
             self.launchMarker = AlienLaunchMarker(self.world)
         end 
         
