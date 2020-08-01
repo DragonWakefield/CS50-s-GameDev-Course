@@ -103,7 +103,7 @@ function TakeTurnState:attack(attacker, defender, attackerSprite, defenderSprite
                 
                 -- shrink the defender's health bar over half a second, doing at least 1 dmg
                 local dmg = math.max(1, attacker.attack - defender.defense)
-                dmg = 100
+             
                 Timer.tween(0.5, {
                     [defenderBar] = {value = defender.currentHP - dmg}
                 })
@@ -188,7 +188,7 @@ function TakeTurnState:victory()
             local exp = (self.opponentPokemon.HPIV + self.opponentPokemon.attackIV +
                 self.opponentPokemon.defenseIV + self.opponentPokemon.speedIV) * self.opponentPokemon.level
 
-                exp = 94
+               
             gStateStack:push(BattleMessageState('You earned ' .. tostring(exp) .. ' experience points!',
                 function() end, false))
 

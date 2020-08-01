@@ -45,8 +45,8 @@ function Pokemon:calculateStats()
 end
 
 function Pokemon.getRandomDef()
-    --return POKEMON_DEFS[POKEMON_IDS[math.random(#POKEMON_IDS)]]
-    return POKEMON_DEFS[POKEMON_IDS[4]]
+    return POKEMON_DEFS[POKEMON_IDS[math.random(#POKEMON_IDS)]]
+ 
 end
 
 --[[
