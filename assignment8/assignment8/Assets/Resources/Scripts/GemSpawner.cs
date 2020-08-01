@@ -10,7 +10,7 @@ public class GemSpawner : MonoBehaviour
 	// Use this for initialization
 	void Start () {
 
-		// infinite coin spawning function, asynchronous
+		// infinite gem spawning function, asynchronous
 		StartCoroutine(SpawnGems());
 	}
 
@@ -22,17 +22,17 @@ public class GemSpawner : MonoBehaviour
 	IEnumerator SpawnGems() {
 		while (true) {
 
-			// number of coins we could spawn vertically
+			// number of gems we could spawn vertically
 			int gemsThisRow = 1;
 
-			// instantiate all coins in this row separated by some random amount of space
+			// instantiate all gems in this row separated by some random amount of space
 			for (int i = 0; i < gemsThisRow; i++) {
                 
 				Instantiate(prefabs[Random.Range(0, prefabs.Length)], new Vector3(26, Random.Range(-10, 10), 10), Quaternion.identity);
 
 			}
 
-			// pause 1-5 seconds until the next coin spawns
+			// pause 1-5 seconds until the next gem spawns
 			yield return new WaitForSeconds(Random.Range(1, 10));
 		}
 	}

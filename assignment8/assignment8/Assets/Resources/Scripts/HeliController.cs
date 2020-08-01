@@ -61,7 +61,8 @@ public class HeliController : MonoBehaviour {
 		GetComponent<ParticleSystem>().Play();
 	}
 	public void PickupGem(){
-		coinTotal += 5;
+		int gem_increase = 5;
+		coinTotal += gem_increase;
 		GetComponents<AudioSource>()[0].Play();
 		GetComponent<ParticleSystem>().Play();
 	}
