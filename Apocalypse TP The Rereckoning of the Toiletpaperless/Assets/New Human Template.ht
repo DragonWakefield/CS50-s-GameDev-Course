@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1105 &110500000
+HumanTemplate:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Human Template
+  m_BoneTemplate:
+    Chest: Chest
+    Head: PT_Medieval_Head
+    Hips: Hips
+    Left Index Distal: PT_Medieval_LeftHandIndex3
+    Left Index Intermediate: PT_Medieval_LeftHandIndex2
+    Left Index Proximal: PT_Medieval_LeftHandIndex1
+    Left Little Distal: PT_Medieval_LeftHandPinky3
+    Left Little Intermediate: PT_Medieval_LeftHandPinky2
+    Left Little Proximal: PT_Medieval_LeftHandPinky1
+    Left Middle Distal: PT_Medieval_LeftHandMiddle3
+    Left Middle Intermediate: PT_Medieval_LeftHandMiddle2
+    Left Middle Proximal: PT_Medieval_LeftHandMiddle1
+    Left Ring Distal: PT_Medieval_LeftHandRing3
+    Left Ring Intermediate: PT_Medieval_LeftHandRing2
+    Left Ring Proximal: PT_Medieval_LeftHandRing1
+    Left Thumb Distal: PT_Medieval_LeftHandThumb3
+    Left Thumb Intermediate: PT_Medieval_LeftHandThumb2
+    Left Thumb Proximal: PT_Medieval_LeftHandThumb1
+    LeftFoot: LeftFoot
+    LeftHand: LeftHand
+    LeftLowerArm: LeftLowerArm
+    LeftLowerLeg: LeftLowerLeg
+    LeftShoulder: LeftShoulder
+    LeftToes: LeftToes
+    LeftUpperArm: LeftUpperArm
+    LeftUpperLeg: LeftUpperLeg
+    Neck: PT_Medieval_Neck
+    Right Index Distal: PT_Medieval_RightHandIndex3
+    Right Index Intermediate: PT_Medieval_RightHandIndex2
+    Right Index Proximal: PT_Medieval_RightHandIndex1
+    Right Little Distal: PT_Medieval_RightHandPinky3
+    Right Little Intermediate: PT_Medieval_RightHandPinky2
+    Right Little Proximal: PT_Medieval_RightHandPinky1
+    Right Middle Distal: PT_Medieval_RightHandMiddle3
+    Right Middle Intermediate: PT_Medieval_RightHandMiddle2
+    Right Middle Proximal: PT_Medieval_RightHandMiddle1
+    Right Ring Distal: PT_Medieval_RightHandRing3
+    Right Ring Intermediate: PT_Medieval_RightHandRing2
+    Right Ring Proximal: PT_Medieval_RightHandRing1
+    Right Thumb Distal: PT_Medieval_RightHandThumb3
+    Right Thumb Intermediate: PT_Medieval_RightHandThumb2
+    Right Thumb Proximal: PT_Medieval_RightHandThumb1
+    RightFoot: RightFoot
+    RightHand: RightHand
+    RightLowerArm: RightLowerArm
+    RightLowerLeg: RightLowerLeg
+    RightShoulder: RightShoulder
+    RightToes: RightToes
+    RightUpperArm: RightUpperArm
+    RightUpperLeg: RightUpperLeg
+    Spine: Spine
+    UpperChest: Upper Chest
